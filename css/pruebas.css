@@ -1,0 +1,88 @@
+/* Establecer un estilo base y resetear márgenes y relleno en el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Establecer un fondo y estilo básico para el encabezado */
+header {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(ellipse at bottom, red, white);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+
+}
+
+/* Establecer el ancho de los elementos aside y el contenido principal */
+.left-aside,
+.right-aside,
+main {
+    box-sizing: border-box;
+    float: left;
+    height: 500px;
+    /* Ajusta la altura según tus necesidades */
+}
+
+.left-aside {
+    width: 20%;
+}
+
+.right-aside {
+    width: 20%;
+}
+
+main {
+    width: 60%;
+    height: 100%;
+    background-color: lightblue;
+
+}
+
+/* Borrar el flotador después de los elementos flotantes */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+img {
+    width: 150px;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-left: 35px;
+}
+
+h1 {
+    margin-left: 35px;
+
+}
+
+/* Estilo del footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
